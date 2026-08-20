@@ -1,0 +1,174 @@
+aid: surfe-b2b
+url: https://raw.githubusercontent.com/api-evangelist/surfe-b2b/refs/heads/main/apis.yml
+name: Surfe
+kind: company
+description: >-
+  Surfe (formerly Leadjet) is a B2B contact-discovery and data-enrichment
+  platform whose REST API turns partial signals - a LinkedIn URL, a name plus a
+  company, a domain, or an email - into verified professional email addresses,
+  mobile phone numbers, company firmographics, and lookalike account
+  recommendations. It is the web-intelligence and contact-discovery layer that
+  sits behind Surfe's LinkedIn and CRM experiences, exposed to developers under
+  https://api.surfe.com/v2 with Bearer API-key auth and a credit-based model.
+  Bulk people and company enrichment run as asynchronous jobs (start with POST,
+  then poll the GET job endpoint or receive a webhook callback). This entry
+  focuses on the contact-discovery, data-enrichment, and B2B/sales-intelligence
+  use cases (people search, people enrichment, company search, company
+  enrichment).
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/surfe-b2b.png
+tags:
+- Contact Discovery
+- Data Enrichment
+- B2B Data
+- Sales Intelligence
+- Lead Enrichment
+- Web Intelligence
+- Contact Data
+- People Enrichment
+- Company Enrichment
+- Prospecting
+created: '2026-07-11'
+modified: '2026-07-11'
+specificationVersion: '0.23'
+apis:
+- aid: surfe-b2b:surfe-b2b-account-api
+  name: Surfe Account API
+  description: Credit balance and account utilities.
+  humanURL: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  baseURL: https://api.surfe.com/v2
+  tags:
+  - Account
+  properties:
+  - type: OpenAPI
+    url: openapi/surfe-b2b-account-api-openapi.yml
+  - type: Documentation
+    url: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  - type: APIReference
+    url: https://developers.surfe.com/
+  - type: PostmanCollection
+    url: collections/surfe-b2b.postman_collection.json
+  - type: OpenCollection
+    url: collections/surfe-b2b.opencollection.json
+  - type: Documentation
+    url: https://developers.surfe.com/public-009-search-people-v2
+  - type: Documentation
+    url: https://developers.surfe.com/public-014-get-bulk-enrichment-organizations
+  - type: Documentation
+    url: https://developers.surfe.com/public-011-search-companies
+  - type: Documentation
+    url: https://developers.surfe.com/
+- aid: surfe-b2b:surfe-b2b-companies-api
+  name: Surfe Companies API
+  description: Search and enrich organizations.
+  humanURL: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  baseURL: https://api.surfe.com/v2
+  tags:
+  - Companies
+  properties:
+  - type: OpenAPI
+    url: openapi/surfe-b2b-companies-api-openapi.yml
+  - type: Documentation
+    url: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  - type: APIReference
+    url: https://developers.surfe.com/
+  - type: PostmanCollection
+    url: collections/surfe-b2b.postman_collection.json
+  - type: OpenCollection
+    url: collections/surfe-b2b.opencollection.json
+  - type: Documentation
+    url: https://developers.surfe.com/public-009-search-people-v2
+  - type: Documentation
+    url: https://developers.surfe.com/public-014-get-bulk-enrichment-organizations
+  - type: Documentation
+    url: https://developers.surfe.com/public-011-search-companies
+  - type: Documentation
+    url: https://developers.surfe.com/
+- aid: surfe-b2b:surfe-b2b-people-api
+  name: Surfe People API
+  description: Search and enrich individual contacts.
+  humanURL: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  baseURL: https://api.surfe.com/v2
+  tags:
+  - People
+  properties:
+  - type: OpenAPI
+    url: openapi/surfe-b2b-people-api-openapi.yml
+  - type: Documentation
+    url: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  - type: APIReference
+    url: https://developers.surfe.com/
+  - type: PostmanCollection
+    url: collections/surfe-b2b.postman_collection.json
+  - type: OpenCollection
+    url: collections/surfe-b2b.opencollection.json
+  - type: Documentation
+    url: https://developers.surfe.com/public-009-search-people-v2
+  - type: Documentation
+    url: https://developers.surfe.com/public-014-get-bulk-enrichment-organizations
+  - type: Documentation
+    url: https://developers.surfe.com/public-011-search-companies
+  - type: Documentation
+    url: https://developers.surfe.com/
+- aid: surfe-b2b:surfe-b2b-recommendations-api
+  name: Surfe Recommendations API
+  description: ICP definition and lookalike account recommendations.
+  humanURL: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  baseURL: https://api.surfe.com/v2
+  tags:
+  - Recommendations
+  properties:
+  - type: OpenAPI
+    url: openapi/surfe-b2b-recommendations-api-openapi.yml
+  - type: Documentation
+    url: https://developers.surfe.com/public-015-create-people-bulk-enrichment
+  - type: APIReference
+    url: https://developers.surfe.com/
+  - type: PostmanCollection
+    url: collections/surfe-b2b.postman_collection.json
+  - type: OpenCollection
+    url: collections/surfe-b2b.opencollection.json
+  - type: Documentation
+    url: https://developers.surfe.com/public-009-search-people-v2
+  - type: Documentation
+    url: https://developers.surfe.com/public-014-get-bulk-enrichment-organizations
+  - type: Documentation
+    url: https://developers.surfe.com/public-011-search-companies
+  - type: Documentation
+    url: https://developers.surfe.com/
+common:
+- type: AgenticAccess
+  url: agentic-access/surfe-b2b-agentic-access.yml
+- type: DomainSecurity
+  url: security/surfe-b2b-domain-security.yml
+- type: Authentication
+  url: authentication/surfe-b2b-authentication.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/surfe
+- type: Website
+  url: https://surfe.com
+- type: Documentation
+  url: https://developers.surfe.com/
+- type: Plans
+  url: plans/surfe-b2b-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/surfe-b2b-rate-limits.yml
+- type: FinOps
+  url: finops/surfe-b2b-finops.yml
+- type: Blog
+  url: https://www.surfe.com/blog/feed/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,20 @@
+{
+  "provider": "surfe-b2b",
+  "sources": [
+    "surfe-b2b-account-api-openapi.yml",
+    "surfe-b2b-companies-api-openapi.yml",
+    "surfe-b2b-people-api-openapi.yml",
+    "surfe-b2b-recommendations-api-openapi.yml"
+  ],
+  "outputs": [
+    "surfe-b2b-account-api-openapi.yml",
+    "surfe-b2b-companies-api-openapi.yml",
+    "surfe-b2b-people-api-openapi.yml",
+    "surfe-b2b-recommendations-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
