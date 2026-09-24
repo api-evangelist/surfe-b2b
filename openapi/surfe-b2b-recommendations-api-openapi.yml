@@ -1,4 +1,4 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
   title: Surfe Account Recommendations API
   version: '2.0'
@@ -102,20 +102,30 @@ components:
           type: string
         filters:
           $ref: '#/components/schemas/CompanyFilters'
-    Range:
+    CompanyFilters:
       type: object
+      description: Company-based filters.
       properties:
-        from:
-          type: integer
-        to:
-          type: integer
-    Error:
-      type: object
-      properties:
-        message:
-          type: string
-        code:
-          type: string
+        industries:
+          type: array
+          items:
+            type: string
+        employeeCount:
+          $ref: '#/components/schemas/Range'
+        revenue:
+          $ref: '#/components/schemas/Range'
+        countries:
+          type: array
+          items:
+            type: string
+        domains:
+          type: array
+          items:
+            type: string
+        keywords:
+          type: array
+          items:
+            type: string
     Company:
       type: object
       properties:
@@ -176,30 +186,20 @@ components:
           type: string
         status:
           type: string
-    CompanyFilters:
+    Error:
       type: object
-      description: Company-based filters.
       properties:
-        industries:
-          type: array
-          items:
-            type: string
-        employeeCount:
-          $ref: '#/components/schemas/Range'
-        revenue:
-          $ref: '#/components/schemas/Range'
-        countries:
-          type: array
-          items:
-            type: string
-        domains:
-          type: array
-          items:
-            type: string
-        keywords:
-          type: array
-          items:
-            type: string
+        message:
+          type: string
+        code:
+          type: string
+    Range:
+      type: object
+      properties:
+        from:
+          type: integer
+        to:
+          type: integer
   securitySchemes:
     bearerAuth:
       type: http

@@ -15,6 +15,12 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
+  "notes": [
+    "surfe-b2b-account-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "surfe-b2b-companies-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "surfe-b2b-people-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "surfe-b2b-recommendations-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
   "skipped": []
 }
